@@ -167,7 +167,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col px-5 py-5 items-center justify-center gap-2 md:px-10 md:py-10 md:flex-col w-[100%] xl:flex-row 2xl:flex-row">
       <motion.div
-        className="relative continer bg-[url('dist/assets/DSCF2210-CLBEcSwn.jpg')] bg-cover bg-[left_-60px_bottom_0px] md:bg-[left_-20px_bottom_0px] md:w-[100%] xl:w-[50%] 2xl:w-[50%] h-[auto] p-5 md:p-[2.5rem] md:max-w-3xl md:h-[45rem] rounded-2xl flex flex-col gap-10 justify-between"
+        className="relative continer bg-[url('https://buw021.github.io/buw_portfolio/assets/DSCF2210-CLBEcSwn.jpg')] bg-cover bg-[left_-60px_bottom_0px] md:bg-[left_-20px_bottom_0px] md:w-[100%] xl:w-[50%] 2xl:w-[50%] h-[auto] p-5 md:p-[2.5rem] md:max-w-3xl md:h-[45rem] rounded-2xl flex flex-col gap-10 justify-between"
         variants={slideTransition}
         initial="left"
         animate="slideLeft"
