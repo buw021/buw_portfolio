@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Gallery from "./Gallery";
 import { motion, AnimatePresence } from "framer-motion";
 import SkillLogo from "./SkillLogo";
@@ -101,9 +101,9 @@ const servicesArr = [
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [direction, setDirection] = useState(0);
-  const [galleryPath, setGalleryPath] = useState("path1");
+  /*const [galleryPath, setGalleryPath] = useState("path1");
   const [isOpen, setIsOpen] = useState(true);
-  const [isOpen2, setIsOpen2] = useState(true);
+  const [isOpen2, setIsOpen2] = useState(true);*/
   const variants = {
     enter: (direction: number) => {
       return {
@@ -125,7 +125,7 @@ const Hero = () => {
     setDirection(1);
   };
 
-  const prevSlide = () => {
+  /*const prevSlide = () => {
     setCurrentSlide((prev) => {
       let newSlide = prev - 1;
       if (newSlide < 0) {
@@ -134,13 +134,13 @@ const Hero = () => {
       return newSlide;
     });
     setDirection(-1);
-  };
+  };*/
 
-  const [isClicked, setIsClicked] = useState(true);
+  /*const [isClicked, setIsClicked] = useState(true);*/
 
-  const changeGallery = () => {
+  /*const changeGallery = () => {
     setGalleryPath((prev) => (prev === "path1" ? "path2" : "path1"));
-  };
+  };*/
 
   const talkAbout = [
     "design",
@@ -150,7 +150,7 @@ const Hero = () => {
     "connection",
   ];
   const [text, setText] = useState(talkAbout[0]);
-  const [index, setIndex] = useState(0);
+  const [, setIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -209,7 +209,7 @@ const Hero = () => {
           {/*isClicked ? <motion.div></motion.div> : <motion.div></motion.div>*/}
 
           <motion.div
-            className={`${isClicked ? "" : ""} container bg-[--dark-sub-color2] xl:w-[50%] min-h-[25rem] py-3 px-5 md:h-full rounded-2xl relative justify-center flex flex-row items-center overflow-hidden`}
+            className={` container bg-[--dark-sub-color2] xl:w-[50%] min-h-[25rem] py-3 px-5 md:h-full rounded-2xl relative justify-center flex flex-row items-center overflow-hidden`}
             variants={slideTransition}
           >
             <AnimatePresence>
@@ -277,7 +277,7 @@ const Hero = () => {
             </AnimatePresence>
           </motion.div>
           <motion.div
-            className={`${isClicked ? "" : ""} container bg-[--dark-sub-color1] xl:w-[50%] min-h-[25rem] py-3 px-5 md:h-full rounded-2xl relative justify-center flex flex-row items-center overflow-hidden`}
+            className={` container bg-[--dark-sub-color1] xl:w-[50%] min-h-[25rem] py-3 px-5 md:h-full rounded-2xl relative justify-center flex flex-row items-center overflow-hidden`}
             variants={slideTransition}
           >
             <AnimatePresence>
@@ -384,9 +384,7 @@ const Hero = () => {
             <Gallery pathKey="path2" slowDuration={500} fastDuration={300} />
           </div>
           <div className=" text-[--light-font-color] hover:cursor-pointer mr-[-5px]">
-            <h1 className="text-xl " onClick={changeGallery}>
-              |||
-            </h1>
+            <h1 className="text-xl ">|||</h1>
           </div>
         </motion.div>
       </div>

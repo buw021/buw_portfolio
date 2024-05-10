@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 
 interface ImageModule {
   default: string;
@@ -13,4 +13,4 @@ const imagePaths:React.FC = () => {
   )
 }
 
-export default imagePaths
+export default imagePaths*/
