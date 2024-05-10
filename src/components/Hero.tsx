@@ -186,8 +186,8 @@ const Hero = () => {
             <p className="dm-sans-paragraph text-[--light-font-color] text-[1rem] md:text-[18px] text-pretty tracking-wide leading-8">
               A Front-End developer with a passion for creating intuitive and
               visually appealing web designs. I'm also a Photographer and a
-              Graphic Designer and I love watching, reading comics and video
-              games too.
+              Graphic Designer. I love watching, reading comics and video games
+              too.
             </p>
           </div>
         </div>
