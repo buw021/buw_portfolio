@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-font: "DM Sans", "sans-serif";
+  --light-bg-color: #d9d9d9;
+  --dark-color: #1e1e1e;
+  --light-font-color: #fbecdb;
+  --light-sub-color1: #7c9278;
+  --light-sub-color2: #9d5740;
+  --dark-sub-color1: #232e21;
+  --dark-sub-color2: #78290f;
+}
+
+* {
+  font-family: var(--main-font), sans-serif;
+}
+
+*::selection {
+  background: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: auto;
+  background-color: var(--light-bg-color);
+}
+
+.dm-sans-logo {
+  font-family: var(--main-font);
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: var(--dark-color);
+}
+
+.dm-sans-name {
+  font-family: var(--main-font);
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.dm-sans-paragraph {
+  font-family: var(--main-font);
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.dot-container:hover img:nth-child(1) {
+  animation: bounce 0.4s ease-in-out 0.1s; /* Delay by 0.1s */
+}
+
+.dot-container:hover img:nth-child(2) {
+  animation: bounce 0.4s ease-in-out 0.2s; /* Delay by 0.2s */
+}
+
+.dot-container:hover img:nth-child(3) {
+  animation: bounce 0.4s ease-in-out 0.3s; /* Delay by 0.3s */
+}
+
+/*@keyframes ping {
+  0%, 70%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  35% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+
+.dot-container img:nth-child(1) {
+  animation: ping 1s ease-in-out 0.1s; 
+  animation-fill-mode: forwards; 
+}
+
+.dot-container img:nth-child(2) {
+  animation: ping 1s ease-in-out 0.2s; 
+  animation-fill-mode: forwards;
+}
+
+.dot-container img:nth-child(3) {
+  animation: ping 1s ease-in-out 0.3s;
+  animation-fill-mode: forwards;
+}*/
+
+.slide {
+  position: relative;
+  height: 100% !important;
+}
+
+.img-carousel {
+  height: 100%;
+  max-width: none !important;
+}
