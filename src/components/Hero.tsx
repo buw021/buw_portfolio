@@ -357,7 +357,7 @@ const Hero = () => {
                     </a>
                     <a
                       className="text-5xl  transition ease-in-out text-[--light-font-color] hover:scale-110 hover:opacity-80 duration-200 border-[--light-font-color] px-[0.65rem] py-1 border-2 rounded-md hover:bg-[--light-font-color] hover:text-[--dark-sub-color1]"
-                      href="www.linkedin.com/in/rulph-buwen-tejano-3a79b3308"
+                      href="https://www.linkedin.com/in/rulph-buwen-tejano-3a79b3308"
                       target="_blank"
                     >
                       <i className="fa-brands fa-linkedin"></i>
